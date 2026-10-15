@@ -1,0 +1,60 @@
+{
+  "audit": {
+    "rows": 50530,
+    "start": "2018-01-01 00:00:00",
+    "end": "2018-12-31 23:50:00",
+    "sampling_interval": "0 days 00:10:00",
+    "missing_values": 0,
+    "duplicate_rows": 0,
+    "duplicate_timestamps": 0,
+    "timestamps_monotonic": true,
+    "time_gaps": 32,
+    "missing_time_steps": 2030
+  },
+  "operating_states": [
+    {
+      "state": "Below cut-in",
+      "samples": 7749,
+      "energy_loss_kwh": 1.7,
+      "share_pct": 15.3
+    },
+    {
+      "state": "Downtime",
+      "samples": 3514,
+      "energy_loss_kwh": 462267.9,
+      "share_pct": 7.0
+    },
+    {
+      "state": "Underperforming",
+      "samples": 4374,
+      "energy_loss_kwh": 407611.7,
+      "share_pct": 8.7
+    },
+    {
+      "state": "Normal",
+      "samples": 34893,
+      "energy_loss_kwh": 730111.2,
+      "share_pct": 69.1
+    }
+  ],
+  "energy_mwh": {
+    "theoretical": 12566.6,
+    "measured": 11012.9,
+    "lost_downtime": 462.3,
+    "lost_underperformance": 407.6
+  },
+  "anomalies_flagged": 855,
+  "models": {
+    "train_rows": 37785,
+    "test_rows": 10106,
+    "test_start": "2018-10-18 22:40:00",
+    "theoretical_curve": {
+      "mae_kw": 207.90313406904144,
+      "rmse_kw": 470.7121810126738
+    },
+    "gradient_boosting": {
+      "mae_kw": 220.4015934240238,
+      "rmse_kw": 503.62846599022004
+    }
+  }
+}
