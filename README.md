@@ -8,9 +8,11 @@ anomaly detection, and a baseline power model.
 
 ## Data
 
-Public Kaggle dataset **"Wind Turbine Scada Dataset"** (`T1.csv`): one turbine, 2018, 10-minute
-resolution, 50,530 rows. Columns: active power, wind speed, theoretical (manufacturer) power curve,
-wind direction. Please check the dataset's page on Kaggle for its licence and attribution.
+1. Download T1.csv from the Kaggle "Wind Turbine Scada Dataset" page
+   (https://www.kaggle.com/datasets/berkerisen/wind-turbine-scada-dataset)
+2. Place it at data/T1.csv
+3. pip install -r requirements.txt
+4. python run_analysis.py
 
 ## Method
 
